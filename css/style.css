@@ -1,0 +1,287 @@
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+.navbar-section {
+	background-color: (#fff, 0.5);
+	backdrop-filter: blur(10px);
+}
+
+.nav-item {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#hero {
+	background: url(../img/bg-desktop.png) no-repeat right;
+	background-size: cover;
+	width: 100%;
+	min-height: 100vh;
+}
+
+#tentang-acara,
+#galeri {
+	padding: 5em 0;
+}
+
+#sponsors {
+	background: linear-gradient(90deg, #326cff, #59ffb9);
+	background-size: 150%;
+	min-height: fit-content;
+}
+
+.btn-nav {
+	border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.btn-nav:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #fff;
+	transform: scale(1.05);
+}
+
+.btn-reg {
+	background-image: linear-gradient(to left, #326cff, #59ffb9, #326cff);
+	background-size: 200%;
+	transition: 0.5s;
+	transform: scale(1.05);
+}
+
+.btn-reg:hover {
+	background-position: right;
+}
+
+.btn-kng {
+	font-size: 16px;
+	font-weight: 700;
+	background-color: #ffc73c;
+	transition: 0.5s;
+	transform: scale(1.05);
+	box-shadow: 0px 0px 40px 12px rgba(255, 211, 103, 0.35);
+}
+
+.btn-kng:hover {
+	background-color: #ff9a3c;
+}
+
+.card-body {
+	padding: 0;
+}
+
+#tentang-acara .card {
+	background: linear-gradient(45deg, #326cff, #59ffb9, #326cff);
+	background-size: 250%;
+	transition: 1s ease;
+}
+
+#tentang-acara .card:hover {
+	background-position: right;
+}
+
+#tentang-acara .card-title {
+	font-size: 36px;
+	font-weight: 900;
+	font-style: italic;
+}
+
+#tentang-acara .big .card-title {
+	font-size: 48px;
+}
+
+#tentang-acara .card-text {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.card img {
+	transition: 0.5s ease;
+}
+
+.card:hover img {
+	transform: scale(1.02);
+}
+
+.title {
+	font-weight: 900;
+	font-size: 36px;
+}
+
+/* Sponsors */
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.sponsors {
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+}
+
+.sponsors-slide {
+	display: inline-block;
+	animation: 30s slide infinite linear;
+}
+
+.sponsors-slide img {
+	width: 292px;
+	padding: 25px 38px;
+	background: #fff;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.img-thumb {
+	border-radius: 32px;
+}
+
+.img-galeri {
+	min-width: 100px;
+}
+
+.btn-group {
+	background: linear-gradient(90deg, #326cff, #59ffb9);
+	background-size: 200%;
+}
+
+.btn-ktg {
+	font-size: 16px;
+	font-weight: 600;
+	background: none;
+	border: 1px solid rgba(255, 255, 255, 0);
+	color: #fff;
+	padding: 7px 10px;
+}
+
+.btn-ktg:active {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #fff;
+}
+
+#berita .card-title {
+	font-weight: 700;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+#berita .card:hover {
+	color: #ff9a3c;
+}
+
+#berita .card-text {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.lainnya {
+	background: url(../img/bg-2.jpg) no-repeat center;
+	background-size: cover;
+	height: 470px;
+}
+
+#footer {
+	background-color: #28a997;
+	min-height: fit-content;
+}
+
+#footer .logo-event {
+	filter: brightness(0) invert(1);
+	width: auto;
+	height: 115px;
+}
+
+#footer {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#footer .small {
+	font-size: 12px;
+}
+
+@media (max-width: 575.98px) {
+	#hero {
+		background: url(../img/bg-mobile.png) no-repeat center;
+		background-size: contain;
+		padding-top: 10em;
+	}
+	#hero .align-items-center {
+		align-items: normal !important;
+	}
+
+	#tentang-acara .big .card-title,
+	#tentang-acara .card-title {
+		font-size: 24px;
+	}
+
+	#tentang-acara .big .card-text {
+		font-size: 14px;
+	}
+
+	img {
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.title {
+		font-weight: 900;
+		font-size: 24px;
+	}
+
+	.img-thumb,
+	.img-galeri {
+		border-radius: 8px;
+	}
+
+	#berita .card-title {
+		display: block;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+
+	#berita .ratio-4x3 {
+		--bs-aspect-ratio: 100%;
+	}
+
+	.lainnya {
+		background-size: 200%;
+		background-position: bottom;
+	}
+
+	#footer {
+		text-align: center;
+	}
+
+	#footer .logo-event {
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+}
+
+@media (max-width: 991.98px) {
+	#tentang-acara .ratio-1x1 {
+		--bs-aspect-ratio: 75%;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	#tentang-acara .card-title {
+		font-size: 24px;
+	}
+}
+
+.carousel-indicators {
+	position: static;
+}
+
+.carousel-indicators .col-3 {
+	width: 15%;
+}
